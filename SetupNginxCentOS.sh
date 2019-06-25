@@ -14,6 +14,6 @@ sudo systemctl enable nginx
 sudo systemctl start nginx
 sudo systemctl enable firewalld
 sudo systemctl start firewalld
-firewall-cmd --zone=public --permanent --add-service=http
-firewall-cmd --zone=public --permanent --add-service=https
-firewall-cmd --reload
+sudo firewall-cmd --zone=public --permanent --add-service=http
+sudo firewall-cmd --zone=public --permanent --add-service=https
+sudo firewall-cmd --reload
