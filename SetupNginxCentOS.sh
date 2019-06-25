@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # Add Repository Nginx
-# sudo yum install epel-release
-
 # Update system software
-sudo yum -y update
+yum -y update
+yum install epel-release
 # Install Nginx.
-sudo yum install nginx
+yum install nginx
 
 # Start Nginx
-sudo systemctl start nginx
+systemctl enable nginx
+systemctl start nginx
 
 # Allow Nginx in Firewall
 # sudo firewall-cmd --permanent --zone=public --add-service=http 
