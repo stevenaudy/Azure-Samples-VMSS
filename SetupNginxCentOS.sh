@@ -1,4 +1,5 @@
 #!/usr/bin/sh
+# https://www.howtoforge.com/tutorial/how-to-install-laravel-5x-with-nginx-and-php-fpm-7-on-centos-7/
 sudo yum -y install epel-release
 sudo yum -y install nginx
 sudo systemctl start nginx
