@@ -20,6 +20,7 @@ sudo cp -R laravel.conf /etc/nginx/conf.d/
 sudo systemctl restart nginx
 sudo cp -R centosgitsetup /var/www/laravel/
 cd /var/www/laravel/
+sudo composer create-project laravel/laravel
 sudo chown -R nginx:root /var/www/laravel
 sudo chmod 755 /var/www/laravel/laravel/storage
 sudo setenforce permissive
