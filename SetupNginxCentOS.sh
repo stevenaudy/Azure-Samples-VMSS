@@ -17,6 +17,7 @@ sudo systemctl enable php-fpm
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
 sudo mkdir -p /var/www/laravel
 sudo cp -R laravel.conf /etc/nginx/conf.d/
+sudo cp -R config /etc/selinux/
 sudo systemctl restart nginx
 sudo cp -R centosgitsetup /var/www/laravel/
 sudo cp -R centosgitsetup /var/www/
