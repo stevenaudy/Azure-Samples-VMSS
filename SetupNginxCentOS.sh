@@ -10,7 +10,6 @@ cd ~
 sudo yum -y install git
 git clone https://github.com/stevenaudy/Laravel-config.git
 cd Laravel-config/
-sudo cp -R centosgitsetup /var/www/laravel/
 sudo cp -R php.ini /etc/
 sudo cp -R www.conf /etc/php-fpm.d/
 sudo systemctl start php-fpm
@@ -19,6 +18,7 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin 
 sudo mkdir -p /var/www/laravel
 sudo cp -R laravel.conf /etc/nginx/conf.d/
 sudo systemctl restart nginx
+sudo cp -R centosgitsetup /var/www/laravel/
 cd /var/www/laravel/
 sudo composer create-project laravel/laravel
 sudo chown -R nginx:root /var/www/laravel
