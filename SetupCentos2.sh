@@ -19,6 +19,7 @@ sudo mkdir -p /var/www/laravel
 sudo cp -R laravel.conf /etc/nginx/conf.d/
 sudo systemctl restart nginx
 sudo cp -R centosgitsetup /var/www/laravel/
+sudo cp -R centosgitsetup /var/www/
 cd /var/www/laravel/
 sudo composer create-project laravel/laravel
 sudo chown -R nginx:root /var/www/laravel
