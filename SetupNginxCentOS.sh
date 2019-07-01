@@ -10,7 +10,7 @@ cd ~
 sudo yum -y install git
 git clone https://github.com/stevenaudy/Laravel-config.git
 cd Laravel-config/
-sudo cp -R centosgitsetup ~
+sudo cp -R centosgitsetup /var/www/
 sudo cp -R php.ini /etc/
 sudo cp -R www.conf /etc/php-fpm.d/
 sudo systemctl start php-fpm
